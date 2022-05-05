@@ -1,0 +1,34 @@
+{
+  "name": "googletagmanager",
+  "widgetName": "GoogleTagManager",
+  "version": "1.0.0",
+  "description": "This widget inserts the required google tag manager scripts into the head and body tags in order to send page view data to your container. The widget sends an event each time it is rendered.",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Kendall",
+  "engines": {
+    "node": ">=12"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "C:\\\\VM Applications\\\\Google Tag Manager-main",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-gtm-module": "^2.0.11"
+  }
+}
