@@ -14,8 +14,10 @@
             </property>
             <property key="sendCustomProps" type="boolean" defaultValue="false">
                 <caption>Customized Page View?</caption>
-                <description>Determines whether custom dataLayer variables are sent with the page view event.</description>
+                <description>Determines whether custom dataLayer variables are sent with the page view event. See the advanced tab to configure which variables are sent.</description>
             </property>
+        </propertyGroup>
+        <propertyGroup caption="Advanced">
             <property key="pageViewEventName" type="string">
                 <caption>Page View Event Name</caption>
                 <description>Name of the custom event to track page views in GTM.</description>
@@ -49,7 +51,11 @@
                             <caption>Property Name</caption>
                             <description>Property name that is sent to your google tag manager container.</description>
                         </property>
-                        <property key="propValue" type="expression">
+                        <property key="propDataSource" type="datasource" isList="true" required="false">
+                            <caption>Property Data Source</caption>
+                            <description>If required, entity from which the expression derives data.</description>
+                        </property>
+                        <property key="propValue" type="expression" dataSource="propDataSource">
                             <caption>Property Value</caption>
                             <description>Value that is sent to your google tag manager container.</description>
                             <returnType type="String" />
