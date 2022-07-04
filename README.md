@@ -13,7 +13,7 @@ This widget inserts the required google tag manager scripts into the head and bo
 3. Configure your [GTM container](https://support.google.com/tagmanager/answer/9442095?hl=en) such that you are recording the appropriate information.
 4. If using google analytics (GA), configure GTM to send the data to the appropriate property in your configuration tag.
     - For normal page views in GA:
-        - Enhanced measurements in GAmust be turned on to track page views.
+        - Enhanced measurements in GA must be turned on to track page views.
         - The configuration tag in GTM must be set to send the page views.
     - For custom page views in GA:
         - Enhanced measurements in GA must be turned off.
