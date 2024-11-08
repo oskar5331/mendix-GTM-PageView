@@ -1,7 +1,7 @@
 {
   "name": "googletagmanager",
   "widgetName": "GoogleTagManager",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This widget inserts the required google tag manager scripts into the head and body tags in order to send page view data to your container. The widget sends an event each time it is rendered.",
   "copyright": "© Mendix Technology BV 2022. All rights reserved.",
   "author": "Kendall",
@@ -25,7 +25,7 @@
     "release": "pluggable-widgets-tools release:web"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^9.0.0"
+    "@mendix/pluggable-widgets-tools": "^10.15.0"
   },
   "dependencies": {
     "classnames": "^2.2.6",
